@@ -1,0 +1,6 @@
+---
+robots:
+- id: 1
+- id: 2
+- id: 3
+total: 3
