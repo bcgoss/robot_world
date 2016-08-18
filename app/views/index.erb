@@ -4,11 +4,22 @@
 <div class="container">
   <ul>
     <% @robots.each do |robot| %>
-    <li>
-      <img>Avatar</img>
-      <h2>Name</h2>
-      <p><%= robot.department %>, <%= robot.city %>, <%= robot.state %></p>
-    </li>
+    <div class="row">
+      <li>
+        <div class="container col-md-4">
+          <img src="<%= robot.avatar %>" class="center-block">
+        </div>
+        <div class="container col-md-8">
+          <h2><a href="/robots/<%=robot.id%>"><%= robot.name %></a></h2>
+          <p><%= robot.department %>, <%= robot.city %>, <%= robot.state %></p>
+          <a href="/robots/<%= robot.id %>/edit">Edit</a>
+          <form action="/robots/<%= robot.id %>" method="post">
+            <input type="hidden" name="_method" value="delete" />
+            <input type="submit" value="Delete" />
+          </form>
+        </div>
+      </li>
+    </div>
     <%end%>
   </ul>
 </div>

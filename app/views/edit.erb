@@ -1,0 +1,10 @@
+<form action="/robots/<%= @robot.id %>" method="post">
+  <input type="hidden" name="_method" value="put" />
+  <input type="text" name="robot[name]" value="Name" /><br/>
+  <input type="text" name="robot[city]" value="City" /><br/>
+  <input type="text" name="robot[state]" value="State" /><br/>
+  <input type="text" name="robot[department]" value="Department" /><br/>
+  <input type="text" name="robot[manufacture_date]" value="Manufacture Date" /><br/>
+  <input type="text" name="robot[hire_date]" value="Hire Date" /><br/>
+  <input type="submit"/>
+</form>
