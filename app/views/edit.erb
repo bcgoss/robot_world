@@ -1,10 +1,14 @@
-<form action="/robots/<%= @robot.id %>" method="post">
-  <input type="hidden" name="_method" value="put" />
-  <input type="text" name="robot[name]" value="Name" /><br/>
-  <input type="text" name="robot[city]" value="City" /><br/>
-  <input type="text" name="robot[state]" value="State" /><br/>
-  <input type="text" name="robot[department]" value="Department" /><br/>
-  <input type="text" name="robot[manufacture_date]" value="Manufacture Date" /><br/>
-  <input type="text" name="robot[hire_date]" value="Hire Date" /><br/>
-  <input type="submit"/>
-</form>
+<div class="container row">
+  <img src="<%= @robot.avatar %>" class="col-md-4" />
+  <form action="/robots/<%= @robot.id %>" method="post" class="col-md-8">
+    <input type="hidden" name="_method" value="put" />
+    <input type="text" name="robot[name]" value="<%= @robot.name %>" /><br/>
+    <input type="text" name="robot[city]" value="<%= @robot.city %>" /><br/>
+    <input type="text" name="robot[state]" value="<%= @robot.state %>" /><br/>
+    <input type="text" name="robot[department]" value="<%= @robot.department %>" /><br/>
+    <input type="date" name="robot[manufacture_date]" value="<%= @robot.manufacture_date %>" /><br/>
+    <input type="date" name="robot[hire_date]" value="<%= @robot.hire_date %>" /><br/>
+    <input type="text" name="robot[avatar]" value="<%= @robot.avatar %>"><br/>
+    <input type="submit"/>
+  </form>
+</div>
