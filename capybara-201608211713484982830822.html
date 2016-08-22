@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <title>ROBOT WORLD!</title>
+</head>
+<body>
+  <div class="nav navbar-inverse">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">Robot World</a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/information">Information</a></li>
+        <li><a href="/robots">All Robots</a></li>
+        <li><a href="/robots/new">New Robot</a></li>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-12">
+  <h1>Robots</h1>
+</div>
+<div class="container">
+  <ul>
+    
+    <div class="row">
+      <li>
+        <div class="container col-md-4">
+          <img src="https://robohash.org/0" class="center-block">
+        </div>
+        <div class="container col-md-8">
+          <h2><a href="/robots/7">George</a></h2>
+          <p>Waste Management, Denver, CO</p>
+          <a href="/robots/7/edit">Edit</a>
+          <form action="/robots/7" method="post">
+            <input type="hidden" name="_method" value="delete" />
+            <input type="submit" value="Delete" />
+          </form>
+        </div>
+      </li>
+    </div>
+    
+    <div class="row">
+      <li>
+        <div class="container col-md-4">
+          <img src="https://robohash.org/1" class="center-block">
+        </div>
+        <div class="container col-md-8">
+          <h2><a href="/robots/8">Bill</a></h2>
+          <p>Engineering, Flint, MI</p>
+          <a href="/robots/8/edit">Edit</a>
+          <form action="/robots/8" method="post">
+            <input type="hidden" name="_method" value="delete" />
+            <input type="submit" value="Delete" />
+          </form>
+        </div>
+      </li>
+    </div>
+    
+  </ul>
+</div>
+
+  </div>
+</body>
+</html>
